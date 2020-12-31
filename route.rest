@@ -1,0 +1,21 @@
+GET http://localhost:1405/users
+###
+GET http://localhost:1405/users/5feca9cae5cec43af4e1d891
+###
+POST http://localhost:1405/users
+Content-Type: application/json
+
+{
+    "name": "vy",
+    "age": 20,
+    "job": "lover and heo-er"
+}
+###
+DELETE http://localhost:1405/users/5feca9cae5cec43af4e1d891
+###
+PATCH http://localhost:1405/users/5fecac0f72e1203d7fa35f33
+Content-Type: application/json
+
+{
+    "name": "hahahahaha"
+}
