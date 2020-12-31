@@ -3,6 +3,8 @@ const app = express()
 const mongoose = require('mongoose')
 require('dotenv').config()
 
+const url = process.env.URL || "mongodb://localhost/users"
+
 mongoose.connect(process.env.URL,
     {useNewUrlParser: true, useUnifiedTopology: true})
 const db = mongoose.connection
